@@ -1,5 +1,6 @@
-import Nav from './Nav'
-import styles from '../styles/Layout.module.css'
+import Nav from "./Nav";
+import styles from "../styles/Layout.module.css";
+import { Slideshow } from "../components/Slideshow";
 
 const Layout = ({ children }) => {
   return (
@@ -7,12 +8,10 @@ const Layout = ({ children }) => {
       <Nav />
       <h3>SUP</h3>
       <div className={styles.container}>
-        <main className={styles.main}>
-          {children}
-        </main>
+        <main className={styles.main}>{children}</main>
       </div>
     </>
-  )
-}
+  );
+};
 
-export default Layout
+export default Layout;
