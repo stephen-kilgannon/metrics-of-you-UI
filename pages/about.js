@@ -1,11 +1,10 @@
 import Head from 'next/head'
+import Sidecar from '../components/Sidecar'
 
 const about = () => {
   return (
     <div>
-      <h1>about</h1>
-      <h1>about</h1>
-      <h1>about</h1>
+      <Sidecar></Sidecar>
     
     </div>
   )
