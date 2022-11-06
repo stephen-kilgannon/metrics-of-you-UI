@@ -6,7 +6,7 @@ export default function Home({ user }) {
   console.log(user)
   return (
     <div><h3>
-      tangs
+      All thing Tang
     </h3>
     </div>
   );
