@@ -1,64 +1,24 @@
 import slideshowStyles from '../styles/Slideshow.module.css'
+import Image from 'next/image'
 
-const colors = ["#0088FE", "#00C49F", "#FFBB28"];
-const delay = 2500;
+import defaultCardImage from '../public/images/image1.png';
 
 
-export const Slideshow = () => {
+const Slideshow = ({imageSrc = defaultCardImage}) => {
 
-    function SlideshowAlter() {
-        const [index, setIndex] = React.useState(0);
-        const timeoutRef = React.useRef(null);
-      
-        function resetTimeout() {
-          if (timeoutRef.current) {
-            clearTimeout(timeoutRef.current);
-          }
-        }
-      
-        React.useEffect(() => {
-          resetTimeout();
-          timeoutRef.current = setTimeout(
-            () =>
-              setIndex((prevIndex) =>
-                prevIndex === colors.length - 1 ? 0 : prevIndex + 1
-              ),
-            delay
-          );
-      
-          return () => {
-            resetTimeout();
-          };
-        }, [index]);
-    
-    }
+    const colors = ["#0088FE", "#00C49F", "#FFBB28"];
     
   return (
-    <div className="slideshow">
-      <div
-        className="slideshowSlider"
-        style={{ transform: `translate3d(${10 * 100}%, 0, 0)` }}
-      >
-        {colors.map((backgroundColor, index) => (
-          <div
-            className="slide"
-            key={index}
-            style={{ backgroundColor }}
-          ></div>
-        ))}
-      </div>
-
-      <div className="slideshowDots">
-        {colors.map((_, idx) => (
-          <div
-            key={idx}
-            className={`slideshowDot${10 === idx ? " active" : ""}`}
-            onClick={() => {
-              setIndex(idx);
-            }}
-          ></div>
-        ))}
-      </div>
+    <div>
+      <h1>SLIDE SHOW</h1>
+    <div className={slideshowStyles.slideshow}>
+    <div className={slideshowStyles.slideshowSlider}>
+    <Image src={imageSrc} alt="me" width="64" height="64" />
     </div>
+  </div>
+
+  </div>
   )
 }
+
+export default Slideshow

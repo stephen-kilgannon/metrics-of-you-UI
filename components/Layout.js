@@ -1,6 +1,5 @@
 import Nav from "./Nav";
 import styles from "../styles/Layout.module.css";
-import { Slideshow } from "../components/Slideshow";
 
 const Layout = ({ children }) => {
   return (
