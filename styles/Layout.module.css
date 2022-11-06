@@ -1,6 +1,7 @@
 .container {
   min-height: 100vh;
   padding: 0 0.5rem;
+  background-image: linear-gradient(90deg, #ff8928 0%, #b35e19 35%, #451d94 100%);
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -11,6 +12,7 @@
   padding: 5rem 0;
   flex: 1;
   display: flex;
+
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
