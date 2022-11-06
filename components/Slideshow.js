@@ -1,13 +1,14 @@
 import React, { Component } from 'react';
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from 'react-responsive-carousel';
+import slideStyles from '../styles/Slideshow.module.css'
   
 export default class NextJsCarousel extends Component {
     render() {
         return (
             <div>
-              <h2>Slideshow</h2>
-              <Carousel>
+              <h2>Insert tang here</h2>
+              <Carousel className={slideStyles.slideshow}>
                   <div>
                       <img src="/1.png" alt="image1"/>
                       <p className="legend">Image 1</p>
