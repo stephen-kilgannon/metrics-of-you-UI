@@ -1,0 +1,43 @@
+.nav {
+    height: 100%;
+    width: 25%;
+    padding:10px;
+    position: fixed;
+    display: inline;
+    z-index: 1;
+    /* top: 0; */
+    left: 0;
+    background-image: linear-gradient(90deg, #ff8928 0%, #b35e19 35%, #451d94 100%);
+    /* background-color: #ff8928; */
+    color: rgb(255, 255, 255);
+    transition: .5 ease;
+    overflow-x: hidden;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  .menuBtn {
+    align-self: center;
+    align-self: flex-start;  
+    justify-self: flex-end;
+    color: #B2BAC2;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    padding-left: 20px;
+}
+  /* .nav Link {
+    padding-bottom: 200px;
+  } */
+  
+  .nav b {
+    padding-bottom: 20px;
+    font-family: "Lucida Handwriting", fantasy;
+  }
+  
+  /* .nav ul li a {
+    margin: 20px 15px;
+  } */
