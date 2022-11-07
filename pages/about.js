@@ -4,8 +4,8 @@ import Sidecar from '../components/Sidecar'
 const about = () => {
   return (
     <div>
-      <Sidecar></Sidecar>
-    
+      <Sidecar>Not much to say</Sidecar>
+
     </div>
   )
 }
